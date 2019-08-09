@@ -99,6 +99,9 @@ def export_graph(graph, directory):
     # write to GraphML file
     nx.write_graphml(graph, directory + "/" + prefix + ".graphml")
 
+    # write to Yaml file
+    nx.write_yaml(graph, directory + "/" + prefix + ".yaml")
+
     # write to Gexf file
     nx.write_gexf(graph, directory + "/" + prefix + ".gexf")
 
